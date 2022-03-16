@@ -7,11 +7,18 @@ import './App.css';
 
 function App() {
   
+const players = ["sakib","mushi","Tamim","Mash"];
+
   return (
-    <div className="App">
-      <Person name = "sakib al hasan" profession = "Alrounder" > </Person>
+    <div className="App"> 
+
+      {players.map(player => <Person name = {player}></Person>)}
+      
+
+
+      {/* <Person name = "sakib al hasan" profession = "Alrounder" > </Person>
       <Person name = "Tamim" profession = " batsman"> </Person>
-      <Person name = "Mushfiq" profession = "wicket keeper"> </Person>
+      <Person name = "Mushfiq" profession = "wicket keeper"> </Person> */}
 
        <Movie name = "Ajai" movieName = "singam" ></Movie>
        <Movie name = "salman" movieName = "bhaijan" ></Movie>
