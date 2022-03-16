@@ -1,25 +1,52 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+
+
+
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Person name = "sakib al hasan" profession = "Alrounder" > </Person>
+      <Person name = "Tamim" profession = " batsman"> </Person>
+      <Person name = "Mushfiq" profession = "wicket keeper"> </Person>
+
+       <Movie name = "Ajai" movieName = "singam" ></Movie>
+       <Movie name = "salman" movieName = "bhaijan" ></Movie>
+       <Movie name = "sarukh" movieName = "kal ho na ho" ></Movie>
+
     </div>
   );
 }
+
+
+
+function Person (props){
+
+return (
+<div className='container'>
+<h2>name : {props.name} </h2>
+<p>Statas : {props.profession}</p>
+
+</div>
+)
+
+}
+
+
+function Movie (props){
+
+return(
+  <div className='movie'>
+    <h2>name : {props.name} </h2>
+    <p>movie : {props.movieName} </p>
+  </div>
+)
+
+}
+
+
 
 export default App;
